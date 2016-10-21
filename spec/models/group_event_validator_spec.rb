@@ -21,18 +21,24 @@
 require 'rails_helper'
 
 RSpec.describe GroupEventValidator, type: :model do
-  FIELDS = [:user_id, :starts, :duration, :name, :description, :location,
-            :state].freeze
+  FIELDS = [:user_id, :starts, :duration, :name, :description, :location].freeze
 
   FIELDS.each do |field|
-    it "should validate #{field}" do
+    it "should create raise exception #{field} = nil" do
       expect do
         params = {}
         params[field] = nil
-        group_event = GroupEventValidator.create!(params)
-
-        expect(group_event.errors).to eq []
+        GroupEventValidator.create!(params)
       end.to raise_error(ActiveRecord::RecordInvalid)
+    end
+
+    it "should create raise exception #{field} = nil" do
+      params = {}
+      params[field] = nil
+      group_event = GroupEventValidator.new(params)
+
+      expect(group_event.valid?).to eq false
+      expect(group_event.errors).to include field
     end
   end
 end

@@ -19,5 +19,6 @@
 #
 
 class GroupEventValidator < GroupEvent
-  validates :user_id, :starts, :duration, :description, :state, presence: true
+  validates :user_id, :starts, :duration, :name, :description, :location,
+            presence: true
 end
