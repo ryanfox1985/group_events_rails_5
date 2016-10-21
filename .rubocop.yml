@@ -1,0 +1,20 @@
+require: rubocop-rspec
+inherit_from: .rubocop_todo.yml
+Rails:
+  enabled: true
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+    - '**/*.rake'
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+    - 'script/**/*'
+    - 'vendor/**/*'
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/ParameterLists:
+  CountKeywordArgs: false
