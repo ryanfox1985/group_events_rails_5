@@ -1,0 +1,14 @@
+cache: bundler
+language: ruby
+rvm:
+  - 2.3.0
+  - ruby-head
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+install:
+  - bundler install
+script:
+  - RAILS_ENV=test bundle exec rake db:setup
+  - RAILS_ENV=test bundle exec rake
+  - RAILS_ENV=test bundle exec rubocop

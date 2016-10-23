@@ -1,5 +1,9 @@
 # README
 
+[![Build Status](https://travis-ci.org/ryanfox1985/group_events_rails_5.svg?branch=master)](https://travis-ci.org/ryanfox1985/group_events_rails_5)
+[![Coverage Status](https://coveralls.io/repos/github/ryanfox1985/group_events_rails_5/badge.svg?branch=master)](https://coveralls.io/github/ryanfox1985/group_events_rails_5?branch=master)
+[![Code Climate](https://codeclimate.com/github/ryanfox1985/group_events_rails_5/badges/gpa.svg)](https://codeclimate.com/github/ryanfox1985/group_events_rails_5)
+
 ## Dependencies
 * Ruby 2.3.0
 * Rails 5
