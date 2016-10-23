@@ -3,6 +3,10 @@
 [![Build Status](https://travis-ci.org/ryanfox1985/group_events_rails_5.svg?branch=master)](https://travis-ci.org/ryanfox1985/group_events_rails_5)
 [![Coverage Status](https://coveralls.io/repos/github/ryanfox1985/group_events_rails_5/badge.svg?branch=master)](https://coveralls.io/github/ryanfox1985/group_events_rails_5?branch=master)
 [![Code Climate](https://codeclimate.com/github/ryanfox1985/group_events_rails_5/badges/gpa.svg)](https://codeclimate.com/github/ryanfox1985/group_events_rails_5)
+[![Dependency Status](https://gemnasium.com/badges/github.com/ryanfox1985/group_events_rails_5.svg)](https://gemnasium.com/github.com/ryanfox1985/group_events_rails_5)
+[![security](https://hakiri.io/github/ryanfox1985/group_events_rails_5/master.svg)](https://hakiri.io/github/ryanfox1985/group_events_rails_5/master)
+[![Docker Automated build](https://img.shields.io/docker/automated/jrottenberg/ffmpeg.svg)](https://hub.docker.com/r/ryanfox1985/group_events_rails_5)
+![license](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 ## Dependencies
 * Ruby 2.3.0
